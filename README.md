@@ -10,6 +10,7 @@ This version of the code was implemented for version 28 and above, so unsure of 
 
 The manifest has seen some change:
 - *Permissions*
+```
     <!--    Permissions-->
     <!--Read external storage for import of data base-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
@@ -18,12 +19,16 @@ The manifest has seen some change:
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32"
         tools:ignore="ScopedStorage" />
+```
 - *<application ...* & *<activity ...*
+```
   android:grantUriPermissions="true"
+```
 
 - *<intent*
-    <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
-
+```
+      <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+```
 The permissions are unecessary for 33 and above as they are handled directly by the remember function.
 Concerning *android:grantUriPermissions="true"* it is here so that other app can read your file. I don't understand the in and out but it seems to work. I put it in *application* and *activity* because it works that way, I don't know more.
 
