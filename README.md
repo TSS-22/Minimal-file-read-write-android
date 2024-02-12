@@ -32,3 +32,4 @@ The manifest has seen some change:
 The permissions are unecessary for 33 and above as they are handled directly by the remember function.
 Concerning *android:grantUriPermissions="true"* it is here so that other app can read your file. I don't understand the in and out but it seems to work. I put it in *application* and *activity* because it works that way, I don't know more.
 
+The `contentResolver` is always needed to work with `DocumentFile` so to access it, the best is to use the `ApplicationContext` from what I gathered. It is, allegdly, in part with the Android way of doing things (if there was ever anyway).
