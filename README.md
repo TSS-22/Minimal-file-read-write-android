@@ -1,12 +1,15 @@
-The example has been tested on Android 33
+The example has been tested on Android 33.
+
 It use only native code.
 
 The dependcies are:
+```
 implementation("com.google.accompanist:accompanist-permissions:0.34.0")
 implementation("androidx.documentfile:documentfile:1.0.1")
+```
 
-For version below 33, the code to implement permissions is to be done (but should be a piece of cake if you managed to not blow your brain out trying to work out the files operations of Android API).
-This version of the code was implemented for version 28 and above, so unsure of how it work below (and above).
+For version below **33**, the code to implement permissions is to be done (but should be a piece of cake if you managed to not blow your brain out trying to work out the files operations of Android API).
+This version of the code was implemented for version **28** to **33**, so I am unsure of how it work below (and above).
 
 The manifest has seen some change:
 - *Permissions*
